@@ -3,7 +3,6 @@ Section: admin
 Priority: important
 Maintainer: Michael Biebl <biebl@debian.org>
 Build-Depends: debhelper (>= 8),
-               dpkg-dev (>= 1.16.1),
                autotools-dev (>= 20100122.1),
                zlib1g-dev,
                libmysqlclient-dev,
@@ -27,7 +26,6 @@ Provides: system-log-daemon,
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          lsb-base (>= 3.2-14),
-         initscripts (>= 2.88dsf-13.3)
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
